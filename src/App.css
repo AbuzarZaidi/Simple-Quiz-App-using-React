@@ -1,38 +1,61 @@
-.App {
+h1{
+  color:white;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.quizApp{
+   background-color: #34495e;
+  color: white;
+  height: 60vh;
+  width: 70%;
+  margin: auto;
+  margin-top: 15vh; 
+display: flex;
+align-items: center;
+  border-radius: 15px;
+  padding: 20px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.score-section {
   display: flex;
-  flex-direction: column;
+  font-size: 2.4rem;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: column;
+}
+.question-section{
+  margin-bottom: 10vh;
+}
+button {
+  width: 100%;
+  font-size: 18px;
+  color: #ffffff;
+  background-color: #2980b9;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  align-items: center;
+  border: 5px solid #34495e;
+  cursor: pointer;
+  margin-bottom: 5px;
 }
 
-.App-link {
-  color: #61dafb;
+.correct {
+  background-color: #2f922f;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.incorrect {
+  background-color: #ff3333;
+}
+
+button:hover {
+  background-color: #7b86ac;
+}
+
+button:focus {
+  outline: none;
+}
+
+button svg {
+  margin-right: 5px;
 }
